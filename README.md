@@ -36,4 +36,4 @@ Use [dzp](https://github.com/acikek/dzp-rs) for additional features.
 
 ## License
 
-MIT © (year) (name)
+MIT © 2022 Skye P.

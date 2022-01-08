@@ -12,11 +12,12 @@ cdnc:
     # If world has daylight cycle, set it to false
     - if <[world].gamerule[doDaylightCycle]>:
       - gamerule <[world]> doDaylightCycle false
-    # Set server flag if not present
+    # Set to enabled if flag not present
     - if !<server.has_flag[cdnc.enabled]>:
       - flag server cdnc.enabled:true
     # Start modifying time
-    - run cdnc_modify_time def:<[config]>|<[world]>
+    - if <server.flag[cdnc.enabled]>:
+      - run cdnc_modify_time def:<[config]>|<[world]>
 
 cdnc_modify_time:
   type: task

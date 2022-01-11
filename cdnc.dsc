@@ -1,7 +1,7 @@
 cdnc_config:
   type: data
   world: world
-  ticks: 36
+  ticks: 30
 
 cdnc:
   type: world

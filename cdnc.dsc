@@ -51,9 +51,9 @@ cdnc_command:
   - define world <world[<[config].data_key[world]>]>
 
   - if <context.args.is_empty>:
-    - narrate "<gray>Use <yellow>/cdnc enable <gray>to resume time modification."
-    - narrate "<gray>Use <yellow>/cdnc disable <gray>to stop time modification."
-    - narrate "<gray>Use <yellow>/cdnc status <gray>to view current CDNC values."
+    - narrate "<yellow>/cdnc enable <gray>to resume time modification."
+    - narrate "<yellow>/cdnc disable <gray>to stop time modification."
+    - narrate "<yellow>/cdnc status <gray>to view current CDNC values."
 
   - else if <context.args.first> == enable:
     - if <server.flag[cdnc.enabled]>:

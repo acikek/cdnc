@@ -32,6 +32,7 @@ cdnc_modify_time:
     # Reset tick value on overflow
     - define tick:++
     - if <[tick]> > 24000:
+      - customevent id:cdnc_cycle
       - define tick 0
     # Wait specified amount of ticks
     - wait <[config].data_key[ticks]>t
